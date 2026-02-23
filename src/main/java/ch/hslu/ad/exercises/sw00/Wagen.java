@@ -1,4 +1,4 @@
-package ch.hslu.ad.exercises.sw01;
+package ch.hslu.ad.exercises.sw00;
 
 import java.util.Objects;
 

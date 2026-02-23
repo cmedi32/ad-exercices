@@ -1,4 +1,4 @@
-package ch.hslu.ad.exercises.sw01;
+package ch.hslu.ad.exercises.sw00;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
