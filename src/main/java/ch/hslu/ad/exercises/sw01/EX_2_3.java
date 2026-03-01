@@ -23,14 +23,29 @@ public class EX_2_3 {
 
     public static void task1() {
         task1_calls++;
+        try {
+            Thread.sleep(5);
+        } catch (InterruptedException e) {
+            LOG.error("Thread sleep interrupted", e);
+        }
     }
 
     public static void task2() {
         task2_calls++;
+        try {
+            Thread.sleep(5);
+        } catch (InterruptedException e) {
+            LOG.error("Thread sleep interrupted", e);
+        }
     }
 
     public static void task3() {
         task3_calls++;
+        try {
+            Thread.sleep(5);
+        } catch (InterruptedException e) {
+            LOG.error("Thread sleep interrupted", e);
+        }
     }
 
     public static long getTotalCalls() {
@@ -44,12 +59,14 @@ public class EX_2_3 {
     }
 
     public static void main(String[] args) {
-        System.out.println("n | Total Calls");
-        System.out.println("--|------------");
-        for (int i = 0; i <= 10000; i+=1000) {
+        LOG.info("n | Total Calls | Time (ms)");
+        LOG.info("--|-------------|----------");
+        for (int i = 0; i <= 50; i += 10) {
             resetCounters();
+            long start = System.currentTimeMillis();
             task(i);
-            System.out.printf("%d | %d%n", i, getTotalCalls());
+            long end = System.currentTimeMillis();
+            LOG.info(String.format("%d | %d | %d", i, getTotalCalls(), (end - start)));
         }
     }
 }

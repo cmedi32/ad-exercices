@@ -1,0 +1,16 @@
+n0 : 10000;
+t0 : 0.1;
+
+log10(x) := log(x)/log(10);
+
+f1(n) := t0;                                   /* O(1) */
+f2(n) := (t0 / (n0 * log10(n0))) * n * log10(n); /* O(n log n) */
+f3(n) := (t0 / n0^2) * n^2;                    /* O(n^2) */
+
+linear(n) := (t0 / n0) * n;
+
+wxplot2d([f1(n), f2(n), f3(n), linear(n)], [n, 1, 120000], [y, 0, 15],
+    [legend, "O(1)", "O(n log n)", "O(n^2)", "Lineares Wachstum"],
+    [xlabel, "n (Input Size)"],
+    [ylabel, "t (Seconds)"],
+    [title, "Algorithm Complexity Growth"]);
