@@ -95,3 +95,11 @@ MUL -
 
 2 Komponenten SUB und DIV. Wichtig hier:
 **Reihenfolge relevant in welcher auf den Stack gelegt wird (nicht kommuntativ)**
+
+LOAD 5
+LOAD 6
+LOAD 7
+LOAD 4
+SUB
+DIV
+MUL
