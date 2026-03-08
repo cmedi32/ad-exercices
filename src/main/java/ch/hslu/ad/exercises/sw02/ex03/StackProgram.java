@@ -1,4 +1,4 @@
-package ch.hslu.ad.exercises.sw02.sw03;
+package ch.hslu.ad.exercises.sw02.ex03;
 
 import ch.hslu.ad.exercises.sw02.ex02.ArrayStack;
 import ch.hslu.ad.exercises.sw02.ex02.Stack;
