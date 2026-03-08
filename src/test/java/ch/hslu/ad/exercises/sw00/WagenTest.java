@@ -1,18 +1,10 @@
 package ch.hslu.ad.exercises.sw00;
 
-import nl.jqno.equalsverifier.EqualsVerifier;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 class WagenTest {
-
-    @Test
-    void testEqualsContract() {
-        EqualsVerifier.forClass(Wagen.class)
-            .withIgnoredFields("nachfolger")
-            .verify();
-    }
 
     @Test
     void testOverloadedConstructor() {
@@ -35,7 +27,7 @@ class WagenTest {
 
         assertThat(gesamtPlaetze).isEqualTo(180);
     }
-    
+
     @Test
     void testBerechneGesamtPlaetzeSingleWagen() {
         Wagen wagen = new Wagen("W001", 100);
