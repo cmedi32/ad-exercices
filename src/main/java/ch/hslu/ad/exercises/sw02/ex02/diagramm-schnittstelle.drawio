@@ -1,0 +1,19 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
+  <diagram name="Stack Implementation" id="OAHVbezx9zw3xYGvea9L">
+    <mxGraphModel dx="815" dy="444" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2PpWyvUFMIc1_HER_T0w-1" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;Stack&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;text-align:left;&quot;&gt;+ push(item: String): void&lt;br&gt;+ pop(): String&lt;br&gt;+ isEmpty(): boolean&lt;br&gt;+ isFull(): boolean&lt;/p&gt;" vertex="1">
+          <mxGeometry height="110" width="220" x="240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2PpWyvUFMIc1_HER_T0w-2" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ArrayStack&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;text-align:left;&quot;&gt;- elements: String[]&lt;br&gt;- topIndex: int&lt;br&gt;- capacity: int&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;text-align:left;&quot;&gt;+ ArrayStack(capacity: int)&lt;br&gt;+ push(item: String): void&lt;br&gt;+ pop(): String&lt;br&gt;+ isEmpty(): boolean&lt;br&gt;+ isFull(): boolean&lt;/p&gt;" vertex="1">
+          <mxGeometry height="160" width="220" x="240" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="2PpWyvUFMIc1_HER_T0w-3" edge="1" parent="1" source="2PpWyvUFMIc1_HER_T0w-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;endArrow=block;endFill=0;strokeColor=#000000;" target="2PpWyvUFMIc1_HER_T0w-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
