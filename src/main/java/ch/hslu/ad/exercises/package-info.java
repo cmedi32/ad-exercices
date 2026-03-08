@@ -15,7 +15,7 @@
  */
 
 /**
- * Demo-Package.
+ * Packaged AD-Exercises.
  */
-package ch.hslu.ad.exercises.sw00;
+package ch.hslu.ad.exercises;
 
