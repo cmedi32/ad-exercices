@@ -39,3 +39,59 @@
 - Array ist statisch, Grösse somit beschränkt.
 - Maximaler Platz ist immer belegt, weil bereits reserviert.
 - Dadurch ist ein maximal schnelles Einfügen möglich!
+
+**ex 03 Stackmaschine**
+
+**Lernziele:**
+
+- Anwendung eines Stacks
+
+**Zustandsanalyse eines Stacks**
+
+LOAD 2:
+
+| 2 |
+|---|
+
+LOAD 3:
+
+| 3 |
+|---|
+| 2 |
+
+ADD:
+
+| 5 |
+|---|
+
+LOAD 4:
+
+| 4 |
+|---|
+| 5 |
+
+MUL:
+
+| 20 |
+|----|
+
+PRINT:
+
+| - |
+|---|
+
+**Stackprogramm für die Aussage (4+5) * (2+3)**
+
+LOAD 4 -
+LOAD 5 -
+**ADD** -
+LOAD 2 -
+LOAD 3 -
+**ADD** -
+MUL -
+**PRINT**
+
+**Erweiterung der Maschine mit Subtraktion und Division**
+
+2 Komponenten SUB und DIV. Wichtig hier:
+**Reihenfolge relevant in welcher auf den Stack gelegt wird (nicht kommuntativ)**
