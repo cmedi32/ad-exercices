@@ -12,9 +12,11 @@ public final class EX_4_3 {
     private long[] memo;
 
     public static void main(final String[] args) {
-        final int n = 40; // Fibonacci index to compute
         final EX_4_3 exercise = new EX_4_3();
-        exercise.runDemo(n);
+        exercise.runDemo(10);
+        exercise.runDemo(20);
+        exercise.runDemo(30);
+        exercise.runDemo(40);
     }
 
     /**
