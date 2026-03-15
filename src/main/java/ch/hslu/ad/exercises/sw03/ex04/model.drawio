@@ -1,0 +1,129 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
+  <diagram id="uml_tree_diagram_v2" name="Binary Tree UML">
+    <mxGraphModel dx="1240" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TreeAware" parent="1" style="shape=rect;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingTop=4;spacingLeft=8;spacingRight=8;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" value="&lt;center&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;TreeAware&lt;/b&gt;&lt;/center&gt;&lt;hr&gt;+ insert(value: int): void&lt;br&gt;+ search(value: int): Node&lt;br&gt;+ delete(value: int): void&lt;br&gt;+ traverseInOrder(): void&lt;br&gt;+ traversePreOrder(): void&lt;br&gt;+ traversePostOrder(): void&lt;div&gt;+ getSize(): int&lt;/div&gt;&lt;div&gt;+ getHeight(): int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="170" x="255" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Comparable" parent="1" style="shape=rect;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingTop=4;spacingLeft=8;spacingRight=8;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" value="&lt;center&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Comparable&lt;/b&gt;&lt;/center&gt;&lt;hr&gt;+ compareTo(other: Node): int" vertex="1">
+          <mxGeometry height="80" width="200" x="630" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Tree" parent="1" style="shape=rect;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingTop=4;spacingLeft=8;spacingRight=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;&lt;center&gt;Tree&lt;/center&gt;&lt;/b&gt;&lt;hr&gt;- root: Node&lt;div&gt;- size: int&lt;/div&gt;&lt;div&gt;- height: int&lt;br&gt;&lt;hr&gt;+ Tree(value: int)&lt;br&gt;&lt;div&gt;+ insert(value: int): void&lt;br&gt;+ search(value: int): Node&lt;br&gt;+ delete(value: int): void&lt;br&gt;+ traverseInOrder(): void&lt;br&gt;+ traversePreOrder(): void&lt;br&gt;+ traversePostOrder(): void&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;font&gt;+ getSize(): int&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(193, 193, 193), rgb(255, 255, 255));&quot;&gt;+ getHeight(): int&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: light-dark(rgb(193, 193, 193), rgb(255, 255, 255));&quot;&gt;+ equals(): boolean&lt;br&gt;+ hashCode(): int&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="266.25" width="180" x="250" y="363.75" as="geometry" />
+        </mxCell>
+        <mxCell id="Node" parent="1" style="shape=rect;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacingTop=4;spacingLeft=8;spacingRight=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;&lt;center&gt;Node&lt;/center&gt;&lt;/b&gt;&lt;hr&gt;- value: int&lt;div&gt;- parent: Node&lt;/div&gt;&lt;div&gt;- left: Node&lt;/div&gt;&lt;div&gt;- right: Node&lt;br&gt;&lt;hr&gt;+ Node(value: int)&lt;br&gt;+ getValue(): int&lt;/div&gt;&lt;div&gt;+ getParent(): Node&lt;/div&gt;&lt;div&gt;+ setParent(parent: Node): void&lt;/div&gt;&lt;div&gt;+ getLeft(): Node&lt;/div&gt;&lt;div&gt;+ setLeft(left: Node)&lt;/div&gt;&lt;div&gt;&lt;div&gt;+ getRight(): Node&lt;/div&gt;&lt;div&gt;+ setRight(left: Node)&lt;/div&gt;+ compareTo(other: Node): int&lt;div&gt;+ equals(): boolean&lt;br&gt;+ hashCode(): int&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="276.25" width="200" x="630" y="363.75" as="geometry" />
+        </mxCell>
+        <mxCell id="RelTreeTreeAware" edge="1" parent="1" source="Tree" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;dashed=1;strokeColor=#000000;" target="TreeAware">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RelNodeComparable" edge="1" parent="1" source="Node" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;dashed=1;strokeColor=#000000;" target="Comparable">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RelTreeRoot" edge="1" parent="1" source="Tree" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;startArrow=none;startFill=0;strokeColor=#000000;" target="Node">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="500" />
+              <mxPoint x="480" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RelTreeRoot_sourceLabel" connectable="0" parent="RelTreeRoot" style="edgeLabel;html=1;align=left;verticalAlign=bottom;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.85" as="geometry">
+            <mxPoint y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RelTreeRoot_targetLabel" connectable="0" parent="RelTreeRoot" style="edgeLabel;html=1;align=right;verticalAlign=bottom;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.85" as="geometry">
+            <mxPoint y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RelTreeRoot_roleLabel" connectable="0" parent="RelTreeRoot" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];" value="- root" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NodeLeft" edge="1" parent="1" source="Node" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;" target="Node">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="455" />
+              <mxPoint x="860" y="615" />
+              <mxPoint x="790" y="615" />
+            </Array>
+            <mxPoint x="830" y="455" as="sourcePoint" />
+            <mxPoint x="790" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NodeLeft_sourceLabel" connectable="0" parent="NodeLeft" style="edgeLabel;html=1;align=left;verticalAlign=bottom;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.9" as="geometry">
+            <mxPoint x="-11" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NodeLeft_targetLabel" connectable="0" parent="NodeLeft" style="edgeLabel;html=1;align=right;verticalAlign=bottom;resizable=0;points=[];" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="0.9" as="geometry">
+            <mxPoint x="15" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NodeLeft_roleLabel" connectable="0" parent="NodeLeft" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];" value="- left" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20" y="-25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NodeRight" edge="1" parent="1" source="Node" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;" target="Node">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="900" y="495" />
+              <mxPoint x="900" y="655" />
+              <mxPoint x="730" y="655" />
+            </Array>
+            <mxPoint x="830" y="495" as="sourcePoint" />
+            <mxPoint x="730" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NodeRight_sourceLabel" connectable="0" parent="NodeRight" style="edgeLabel;html=1;align=left;verticalAlign=bottom;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.9" as="geometry">
+            <mxPoint x="-21" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NodeRight_targetLabel" connectable="0" parent="NodeRight" style="edgeLabel;html=1;align=right;verticalAlign=bottom;resizable=0;points=[];" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="0.9" as="geometry">
+            <mxPoint x="-15" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NodeRight_roleLabel" connectable="0" parent="NodeRight" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];" value="- right" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-20" y="17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NodeParent" edge="1" parent="1" source="Node" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;" target="Node">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="535" />
+              <mxPoint x="940" y="695" />
+              <mxPoint x="670" y="695" />
+            </Array>
+            <mxPoint x="830" y="535" as="sourcePoint" />
+            <mxPoint x="670" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NodeParent_sourceLabel" connectable="0" parent="NodeParent" style="edgeLabel;html=1;align=left;verticalAlign=bottom;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.9" as="geometry">
+            <mxPoint x="-30" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NodeParent_targetLabel" connectable="0" parent="NodeParent" style="edgeLabel;html=1;align=right;verticalAlign=bottom;resizable=0;points=[];" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="0.9" as="geometry">
+            <mxPoint x="-10" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NodeParent_roleLabel" connectable="0" parent="NodeParent" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];" value="- parent" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="7" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

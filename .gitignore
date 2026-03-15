@@ -26,3 +26,6 @@
 /mvnw.cmd
 /nb-configuration.xml
 /node_modules/
+
+.claude/*
+.gemini/*
