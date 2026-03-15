@@ -11,6 +11,9 @@ public class EX_2_3 {
     private static long task2_calls = 0;
     private static long task3_calls = 0;
 
+    /**
+     * T(n)=2𝑛+3𝑛+4
+     */
     public static void task(final int n) {
         task1(); task1(); task1(); task1();
         for (int i = 0; i < n; i++) {

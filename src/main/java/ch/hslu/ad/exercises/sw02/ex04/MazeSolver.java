@@ -34,7 +34,7 @@ public class MazeSolver {
      * West > Ost > Nord > Süd
      */
     public void findPath(int row, int column) {
-//        if (count >= 1) { // adjusted base case - terminates after elem has been foun
+//        if (count >= 1) { // adjusted base case - terminates after elem has been found
 //            return;
 //        }
         if (row < 0 || row >= maze.length || column < 0 || column >= maze[row].length) {

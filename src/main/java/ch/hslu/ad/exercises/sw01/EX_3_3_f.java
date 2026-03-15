@@ -60,7 +60,7 @@ public class EX_3_3_f {
 
     /**
      * Exercise 2 - Complexity: O(n).
-     * Logic: n * O(1) + (2 * n) * O(5 = n) [since doC(5) is O(1) due to n beeing small enough].
+     * Logic: n * O(1) + (2 * n) * O(5 = n) [since doC(5) is O(1) due to n not small enough].
      * @param n input size.
      */
     public static void exercise2(final int n) {
@@ -103,7 +103,7 @@ public class EX_3_3_f {
     public static void main(String[] args) {
         final int[] nValues = {10, 20, 50, 100};
         
-        LOG.info("Complexity Analysis (Units of Work)");
+        LOG.info("Complexity Analysis");
         LOG.info("n	Ex1 (O(n))	Ex2 (O(n))	Ex3 (O(n^3))	Ex4 (O(n^3))");
         for (int n : nValues) {
             long c1, c2, c3, c4;
@@ -111,7 +111,7 @@ public class EX_3_3_f {
             counter = 0;
             exercise1(n);
             c1 = counter;
-            
+
             counter = 0;
             exercise2(n);
             c2 = counter;
