@@ -2,6 +2,7 @@ package ch.hslu.ad.exercises.sw03.ex05;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.jspecify.annotations.Nullable;
 
 import java.util.Objects;
 
@@ -11,27 +12,34 @@ import java.util.Objects;
 public class Node implements Comparable<Node> {
 
     @Getter
-    private final int value;
+    private final char value;
 
     @Getter
     @Setter
+    @Nullable
     private Node left;
 
     @Getter
     @Setter
+    @Nullable
     private Node right;
 
     @Getter
     @Setter
     private Node parent;
 
-    public Node(final int value) {
+    public Node(final char value) {
         this.value = value;
     }
 
     @Override
     public int compareTo(final Node other) {
-        return Integer.compare(this.value, other.value);
+        return Character.compare(this.value, other.value);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Node %c visited", value);
     }
 
     @Override
